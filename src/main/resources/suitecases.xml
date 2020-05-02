@@ -1,10 +1,11 @@
-<suite name="Test Cases" parallel="methods" thread-count="5">
-    <test name="basic">
-        <classes>
-            <class name="cyc.testng.BasicAnnotation"/>
-            <class name="cyc.testng.SimpleTest"/>
-        </classes>
-    </test>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Cases" parallel="false" thread-count="5">
+<!--    <test name="basic">-->
+<!--        <classes>-->
+<!--            <class name="cyc.testng.BasicAnnotation"/>-->
+<!--            <class name="cyc.testng.SimpleTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="login">
         <classes>
@@ -15,7 +16,7 @@
 
     <test name="pay">
         <classes>
-            <!--class name="cyc.testng.suite11.SuiteConfig"/-->
+            <class name="cyc.testng.suitecase.SuiteConfig"/>
             <class name="cyc.testng.suitecase.LogoutTest"/>
         </classes>
     </test>

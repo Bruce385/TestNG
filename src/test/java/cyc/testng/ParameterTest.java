@@ -13,6 +13,6 @@ public class ParameterTest {
     @Test
     @Parameters({"name", "age"})  //用parameter注解，传入参数的名称
     public void paramTest(String name, int age) {
-        System.out.println("\nname = " + name + "\nage = " + age);
+        System.out.println("name = " + name + "\nage = " + age);
     }
 }

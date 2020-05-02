@@ -9,7 +9,6 @@ public class SuiteConfig {
 
     @BeforeSuite
     public void beforeSuite() {
-        System.out.println();
         System.out.println("before cyc.testng.suitecase 运行");
     }
 

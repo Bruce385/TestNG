@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 public class TestNGClass2 {
     @BeforeClass
     public void setUp(){
-        System.out.println("\nbeforeClass——>>>>>>来自TestNGClass2类");
+        System.out.println("beforeClass——>>>>>>来自TestNGClass2类");
     }
     @AfterClass
     public void tearDown(){
