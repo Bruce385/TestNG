@@ -1,0 +1,8 @@
+<suite name="TestSuite Demo" parallel="classes">
+    <test name="TestSuite Demo Test">
+        <classes>
+            <class name="cyc.testng.testsuite.TestNGClass1"></class>
+            <class name="cyc.testng.testsuite.TestNGClass2"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="parameter">
+    <test name="param">
+        <classes>
+            <class name="cyc.testng.ParameterTest"/>
+            <parameter name="name" value="张三"/>
+            <parameter name="age" value="13"/>
+        </classes>
+    </test>
+
+</suite>
