@@ -1,23 +1,29 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Test Cases" parallel="false" thread-count="5">
-<!--    <test name="basic">-->
-<!--        <classes>-->
-<!--            <class name="cyc.testng.BasicAnnotation"/>-->
-<!--            <class name="cyc.testng.SimpleTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+<suite name="Test Cases" parallel="methods" thread-count="15">
+    <test name="basic">
+        <classes>
+            <class name="cyc.testng.BasicAnnotation"/>
+            <class name="cyc.testng.SimpleTest"/>
+        </classes>
+    </test>
 
     <test name="login">
         <classes>
             <class name="cyc.testng.suitecase.SuiteConfig"/>
             <class name="cyc.testng.suitecase.LoginTest"/>
+            <class name="cyc.testng.suitecase.LogoutTest"/>
         </classes>
     </test>
 
     <test name="pay">
         <classes>
-            <class name="cyc.testng.suitecase.SuiteConfig"/>
+<!--        <class name="cyc.testng.suitecase.SuiteConfig"/>-->
             <class name="cyc.testng.suitecase.LogoutTest"/>
         </classes>
     </test>
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
 </suite>

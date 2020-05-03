@@ -6,4 +6,8 @@
             <class name="cyc.testng.testsuite.TestNGClass2"></class>
         </classes>
     </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
 </suite>

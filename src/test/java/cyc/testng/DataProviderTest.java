@@ -32,14 +32,15 @@ public class DataProviderTest {
     public Object[][] paramData() {
         return new Object[][]{
                 {"Add 1 + 2", 1, 2, 3},
-                {"Add null + null", null, null, null},
+                {"Add 10 + 20", 10, 20, 40},
+                //{"Add null + null", null, null, null},
                 {"Add 10 + 20", 10, 20, 30},
-                {"Add Big", Integer.MAX_VALUE, Integer.MAX_VALUE, null}
+                {"Add too Big", Integer.MAX_VALUE, Integer.MAX_VALUE, null},
         };
     }
 
     //指定使用哪个DataProvider
-    @Test(dataProvider = "paramData",alwaysRun = true)
+    @Test(dataProvider = "paramData")
     public void testDataProvider(String caseDetail, int num1, int num2, int expect) {
         Integer sum = MathSolution.Add(num1, num2);
         System.out.println(this);

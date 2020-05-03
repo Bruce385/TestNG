@@ -1,9 +1,6 @@
 package cyc.testng.suitecase;
 
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 public class SuiteConfig {
 
@@ -25,5 +22,25 @@ public class SuiteConfig {
     @AfterTest
     public void afterTest() {
         System.out.println("AfterTest 运行");
+    }
+
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("BeforeClass 运行");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("AfterClass 运行");
+    }
+
+    @BeforeMethod
+    public void beforeMethod() {
+        System.out.println("BeforeMethod 运行");
+    }
+
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("AfterMethod 运行");
     }
 }
