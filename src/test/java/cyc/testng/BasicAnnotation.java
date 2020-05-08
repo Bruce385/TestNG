@@ -36,17 +36,17 @@ public class BasicAnnotation {
     }
 
     //最基本的注解，用来把方法标记为测试的一部分
-    @Test(description = "来自BasicAnnotation/testCase1")
+    @Test(description = "BasicAnnotation/testCase1")
     public void testCase1() {
         System.out.println("这是测试用例1\t" + this);
     }
 
-    @Test
+    @Test(description = "BasicAnnotation/testCase2")
     public void testCase2() {
         System.out.println("这是测试用例2\t" + this);
     }
 
-    @Test
+    @Test(description = "BasicAnnotation/testCase3")
     public void testCase3() {
         System.out.println("这是测试用例3\t" + this);
     }
