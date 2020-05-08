@@ -33,6 +33,6 @@ public class SimpleTest {
     @Test
     public void testAdd3() {
         Integer sum3 = MathSolution.Add(Integer.MAX_VALUE, Integer.MAX_VALUE);
-        assertThat("Too Big", sum3, equalTo(null));
+        assertThat("Too Big", sum3, equalTo(-2));
     }
 }

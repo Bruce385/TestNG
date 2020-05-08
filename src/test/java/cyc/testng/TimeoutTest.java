@@ -6,7 +6,7 @@ public class TimeoutTest {
 
     int sum = 0;
 
-    @Test(threadPoolSize = 4, invocationCount = 10, timeOut = 4000)
+    @Test(threadPoolSize = 4, invocationCount = 10, timeOut = 1000)
     public synchronized void testTimeout() throws InterruptedException {
         sum++;
         Thread.sleep(300);
