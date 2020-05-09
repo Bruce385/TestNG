@@ -28,12 +28,12 @@ public class DataProviderReflect {
         return o;
     }
 
-    @Test(dataProvider = "methodData")
+    @Test(dataProvider = "methodData", description = "数据输入：用例1")
     public void test1(String name, int age) {
         System.out.println("test1:  name = " + name + ",age = " + age);
     }
 
-    @Test(dataProvider = "methodData")
+    @Test(dataProvider = "methodData", description = "数据输入：用例2")
     public void test2(String name, int age) {
         System.out.println("test2:  name = " + name + ",age = " + age);
     }
