@@ -2,7 +2,7 @@
 <suite name="Test Cases" parallel="methods" thread-count="15">
     <test name="basic">
         <classes>
-            <class name="cyc.testng.BasicAnnotation"/>
+            <class name="cyc.testng.BasicAnnotationTest"/>
             <class name="cyc.testng.SimpleTest"/>
         </classes>
     </test>

@@ -61,7 +61,7 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                        <!--               待添加的testng.xml                               -->
+<!--                        ./src/main/resources/*.xml-->
                     </suiteXmlFiles>
                     <!--生成allure-result的目录-->
                     <systemProperties>

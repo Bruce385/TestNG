@@ -2,7 +2,7 @@ package cyc.testng;
 
 import org.testng.annotations.*;
 
-public class BasicAnnotation {
+public class BasicAnnotationTest {
 
     @BeforeClass
     public void beforeClass() {

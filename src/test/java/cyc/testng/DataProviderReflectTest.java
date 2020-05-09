@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  * @version 1.0
  * @date 2020/5/3 20:02
  */
-public class DataProviderReflect {
+public class DataProviderReflectTest {
     @Test(dataProvider = "data")
     public void testDataProvider(String name, int age) {
         System.out.println("name = " + name + ",age = " + age);
@@ -24,7 +24,6 @@ public class DataProviderReflect {
                 {"lisi", 20},
                 {"wangwu", 30}
         };
-
         return o;
     }
 
